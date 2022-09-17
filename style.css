@@ -10,25 +10,43 @@ body{
     background-color: black;
     display: flex;
 }
-
 #background-img{
-    width: 40vw;
-    margin-left:10% ;
+    position: relative;
+    margin-left: 10%;
 }
 img{
-    width: 40vw;
-    height: 100vh;
+    width: 32vw;
+    height: 98vh;
 }
+#background-img >h1{
+    position: absolute;
+    top: 150px;
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+#logo{
+    max-width: 100px;
+    max-height: 100px;
+}
+
 .second-column{
-    background-color: rgb(219, 218, 218);
+    background-color: rgb(249, 249, 249);
     border: 2px solid black;
-    width: 40vw;
+    width: 620px;
+    max-height: 98vh;
 }
 #dummy-text{
     font-weight: bold;
-    font-size: 18px;
-    max-width: 450px;
-    margin: 100px auto 0px auto;
+    font-size: 16px;
+    width: 500px;
+    max-width: 100%;
+    margin: 70px 10px 0px 10px;
     font-family: 'Arial Narrow', Arial, sans-serif;
     padding: 10px;
 }
@@ -44,7 +62,76 @@ img{
     margin: 5px;
     font-weight: 300;
 }
-form{
+#sign-form{
+    margin:0px 25px;
+}
+#sign-form h3{
+    font-weight: 200;
+}
+fieldset{
     display: grid;
     grid-template-columns: repeat(2,minmax(100px,1fr));
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 3px rgb(230, 230, 230);
+}
+.form{
+    margin: 5px 2px;
+}
+input{
+    display: block;
+    border-radius: 4px;
+    border:solid 1px lightgray;
+    width: 200px;
+    height: 25px;
+}
+button{
+    background-color: rgb(27, 123, 27);
+    color:white;
+    width: 200px;
+    max-width:100% ;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius:5px;
+    padding:10px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left:15px;
+}
+form>p{
+    font-size: 14px;
+    margin-left: 15px;
+}
+form > p >a{
+    text-decoration: none;
+    color: rgb(27, 123, 27);
+}
+
+/*  pseudo class */
+input:focus{
+    border:solid 3px rgb(114 154 224);
+    box-shadow: 2px 5px rgb(212, 212, 212) ;
+}
+/* styling the footer */
+footer{
+    display: flex;
+    font-size: 20px;
+    background-color: #524f4f;
+    color: #ffff;
+    height: 3vh;
+    justify-content: center;
+    align-items: center;
+}
+footer >a{
+    text-decoration: none;
+    background-color: #524f4f;
+}
+#github-logo{
+    background-color: white;
+    transition: transform 0.3s;
+}
+#github-logo:hover{
+    transform: rotate(360deg);
+    
 }

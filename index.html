@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3d7ad65c26.js" crossorigin="anonymous"></script>
+    <script src="confirmPassword.js" defer></script>
     <title>Sign-up Form</title>
 </head>
 <body>
     <div class="container">
         <div id="background-img">
             <img src="technology.jpg">
+            <h1><img id="logo" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="Odin Logo">ODIN</h1>
         </div>
 
         <div class="second-column">
@@ -22,36 +25,51 @@
                 <p id="second">Sign up <i>now</i> to get started.</p>
                 <p id="last-text">You <i>know you want to.</i></p>
             </div>
-            <div class="sign-form">
-                <h2>Let's do this!</h2>
+            <div id="sign-form">
+                <h3>Let's do this!</h2>
                 <form action="">
-                    <div class="form">
-                        <label for="name">First Name</label>
-                        <input type="text" name="first-name" id="name" required>
-                    </div>
-                    <div class="form">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name" id="last-name" required>
-                    </div>
-                    <div class="form">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-                    <div class="form">
-                        <label for="phone">Phone Number</label>
-                        <input type="number" name="phone" id="phone" required>
-                    </div>
-                    <div class="form">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required>
-                    </div>
-                    <div class="form">
-                        <label for="confirmPassw">Conform Password</label>
-                        <input type="password" name="confirmPassw" id="confirmPassw">
-                    </div>
+                    <fieldset>
+                        <div class="form">
+                            <label for="name">First Name</label>
+                            <input type="text" name="first-name" id="name" required>
+                        </div>
+                        <div class="form">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last-name" id="last-name" required>
+                        </div>
+                        <div class="form">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="form">
+                            <label for="phone">Phone Number</label>
+                            <input type="number" name="phone" id="phone" required>
+                        </div>
+                        <div class="form">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="form">
+                            <label for="confirmPassw">Conform Password</label>
+                            <input type="password" name="confirmPassw" id="confirmPassw" required>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Create Account</button>
+                    <p>
+                        Already have an account? 
+                        <a href="#" target="_blank" rel="">
+                            Log in
+                        </a>
+                    </p>
                 </form>
             </div>
         </div>
     </div>
+    <footer>
+        Copyright&copy;2022 Abd-enour  
+        <a href="https://github.com/Abd-enour" target="_blank">
+          <i class="fa-brands fa-github" id="github-logo"></i>
+        </a>
+      </footer>
 </body>
 </html>
