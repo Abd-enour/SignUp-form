@@ -37,14 +37,11 @@ img{
 
 .second-column{
     background-color: rgb(249, 249, 249);
-    border: 2px solid black;
     width: 620px;
-    max-height: 98vh;
 }
 #dummy-text{
     font-weight: bold;
     font-size: 16px;
-    width: 500px;
     max-width: 100%;
     margin: 70px 10px 0px 10px;
     font-family: 'Arial Narrow', Arial, sans-serif;
@@ -134,4 +131,21 @@ footer >a{
 #github-logo:hover{
     transform: rotate(360deg);
     
+}
+@media only screen and (max-width:880px){
+    fieldset{
+        grid-template-columns:minmax(100px,1fr);
+    }
+    #dummy-text{
+        margin: 30px 10px 0px 10px;
+    }
+    #sign-form {
+        margin: 0px 16px;
+    }
+}
+
+@media only screen and (max-width:375px){
+    #background-img{
+        display: none;
+    }
 }
